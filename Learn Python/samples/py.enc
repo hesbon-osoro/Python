@@ -1,0 +1,254 @@
+#PROGRAMMER: JOEL
+#LANGUAGE : PYTHON
+#TYPE SYSTEM
+#OPERATORS WERE DEFINED IN NO RESPECTIVE ORDER
+#PROGRAM DEFINES NO OTHER FORM OF METHOD OR OPERATION ORIGINALLY DEFIINED BY THE INTERPRETER
+#NOTE: BASIC ERROR ARE HANDLED BY THE INTERPRETER eg: name:str = "Joel"; 
+                                                    # name >> str   //Error 'str' and 'int' .....
+#THE CLASS IS A SINGLE CLASS NO INHERITANCE OR METACLASS NOR POYMORPHIMS.
+#METHODS ARE DEFINED IN AN ORDERLY MANNER AND UNDERSTANDING JUST THE FIRST METHOD GIVE RISE TO THE OTHERS
+
+                                                    
+                        #THIS CODE IS WRITTEN TO ENABLE 'COMPILE' TIME TYPE CHECK IN PYTHON AND MINIMISE ERR
+
+                                            #EG:  var = make(10) //var is predefined as 'int'
+                                            #     var2 = make(20.8) //var is predefined as 'float'
+                                            #since variable are of different type no operator between them is possible
+
+                                                #var + var2 //Error
+                                            
+
+
+import sys   
+
+class make:
+
+    start:type = 0      #start variable will be used as a check 
+
+    def __init__(self,arg):
+        if isinstance(arg,int):
+            self.arg = arg
+            self.start = 1
+        elif isinstance(arg,float):
+            self.arg = arg
+            self.start = 2
+        elif isinstance(arg,bytes):
+            self.arg = arg
+            self.start = 3
+        elif isinstance(arg,str):
+            self.arg = arg
+            self.start = 4
+        else:
+            raise(NameError)
+
+    
+    def __add__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg + foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg + foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg + foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg + foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+
+    def __sub__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg - foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg - foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg - foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg - foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __truediv__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg / foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg / foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg / foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg / foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __floordiv__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg // foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg // foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg // foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg // foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __gt__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg > foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg > foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg > foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg > foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __lt__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg < foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg < foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg < foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg < foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __eq__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg == foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg == foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg == foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg == foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __ne__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg != foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg != foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg != foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg != foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+
+    def __pow__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg ** foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg ** foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg ** foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg ** foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __mod__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg % foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg % foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg % foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg % foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __lshift__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg << foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg << foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg << foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg << foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+
+    def __rshift__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg >> foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg >> foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg >> foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg >> foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __and__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg and foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg and foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg and foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg and foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __or__(self,foo):
+        if isinstance(self.arg,int) and isinstance(start.arg,int) and self.start == 1:
+            return self.arg or start.arg
+        elif isinstance(self.arg,float) and isinstance(start.arg,float) and self.start == 2:
+            return self.arg or start.arg
+        elif isinstance(self.arg,bytes) and isinstance(start.arg,bytes) and self.start == 3:
+            return self.arg or start.arg
+        elif isinstance(self.arg,str) and isinstance(start.arg,str) and self.start == 4:
+            return self.arg or start.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __xor__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return self.arg ^ foo.arg
+        elif isinstance(self.arg,float) and isinstance(foo.arg,float) and self.start == 2:
+            return self.arg ^ foo.arg
+        elif isinstance(self.arg,bytes) and isinstance(foo.arg,bytes) and self.start == 3:
+            return self.arg ^ foo.arg
+        elif isinstance(self.arg,str) and isinstance(foo.arg,str) and self.start == 4:
+            return self.arg ^ foo.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)
+
+    def __invert__(self,foo):
+        if isinstance(self.arg,int) and isinstance(foo.arg,int) and self.start == 1:
+            return ~self.arg 
+        elif isinstance(self.arg,float) and isinstance(add.arg,float) and self.start == 2:
+            return ~self.arg
+        elif isinstance(self.arg,bytes) and isinstance(add.arg,bytes) and self.start == 3:
+            return ~self.arg
+        elif isinstance(self.arg,str) and isinstance(add.arg,str) and self.start == 4:
+            return ~self.arg
+        else:
+            sys.stderr.write("'Different types can be mixed in basic arthimetic operation'\n\n")
+            raise(NameError)

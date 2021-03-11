@@ -1,0 +1,15 @@
+from tkinter import Tk, mainloop, LEFT, TOP
+from tkinter.ttk import *
+root = Tk()
+root.geometry('250x150')
+labelframe = Labelframe(root, text='Welcome to Programming')
+labelframe.pack(expand='yes', fill='both')
+button = Button(labelframe, text='Option 1')
+button.place(x=30, y=10)
+button1 = Button(labelframe, text='Option 2')
+button1.place(x=130, y=10)
+checkbutton1 = Checkbutton(labelframe, text='Checkbutton 1')
+checkbutton1.place(x=30, y=50)
+checkbutton2 = Checkbutton(labelframe, text='Checkbutton 2')
+checkbutton2.place(x=30, y=80)
+mainloop()

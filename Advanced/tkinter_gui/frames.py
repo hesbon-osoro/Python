@@ -1,0 +1,10 @@
+import tkinter as tk
+window = tk.Tk()
+window.title("Frames")
+frame1 = tk.Frame(master=window, width = 100, height = 100, bg="teal")
+frame1.pack()
+frame2 = tk.Frame(master=window, width = 50, height = 50, bg="maroon")
+frame2.pack()
+frame3 = tk.Frame(master=window, width = 20, height = 20, bg="green")
+frame3.pack()
+window.mainloop()

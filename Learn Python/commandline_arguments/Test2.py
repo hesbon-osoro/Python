@@ -1,0 +1,1 @@
+print('This is another file to test if it is captured as another argument')

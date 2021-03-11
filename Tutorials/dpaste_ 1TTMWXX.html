@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://dpaste.com/1TTMWXX# -->
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" lang="" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>dpaste: 1TTMWXX</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="http://static.dpaste.com.s3.amazonaws.com/favicon.ico">
+        <link rel="stylesheet" href="./dpaste_ 1TTMWXX_files/normalize.css">
+        <link rel="stylesheet" href="./dpaste_ 1TTMWXX_files/main.css">
+        <script src="./dpaste_ 1TTMWXX_files/analytics.js.download"></script><script src="./dpaste_ 1TTMWXX_files/jquery.min.js.download"></script>
+        <script src="./dpaste_ 1TTMWXX_files/modernizr-2.8.3.min.js.download"></script>
+        
+<script type="text/javascript">
+    function key(event, letter) {
+        return (event.charCode == letter.charCodeAt() || event.charCode == letter.charCodeAt() + 32)
+        }
+    function subview_redirect(path_end) {
+        location.href = location.href.split('#')[0] + path_end;
+        }
+    function indicate_wrap() { $("#softwrap_toggle").text("Unwrap"); location.hash = "wrap"; }
+    function indicate_unwrap() { $("#softwrap_toggle").text("Soft wrap"); location.hash = ""; }
+    function softwrap_toggle() {
+        $("pre").toggleClass("softwrap");
+        $(".linenodiv").toggle();
+        if ($("#softwrap_toggle").text() == "Soft wrap") { indicate_wrap(); }
+        else { indicate_unwrap(); }
+        }
+    function mark_linked_line() {
+        $('.linemark').remove();
+        $('a[href='+location.hash+']').after('<svg height="18" width="24" class="linemark"> <polygon points="3,0 25,9 3,18" style="fill:#33f"></svg>');
+        }
+    $(document).ready(function() {
+        window.onhashchange = mark_linked_line
+        $("#softwrap_toggle").click(softwrap_toggle);
+        if (location.hash == "#wrap") { softwrap_toggle(); indicate_wrap(); }
+        if (location.hash.indexOf("#line-") === 0) { mark_linked_line(); }
+        });
+    $(document).keypress(function(event){
+       if (key(event, 'D')) { subview_redirect('/duplicate/'); }
+       if (key(event, 'E')) { subview_redirect('/expiry/'); }
+       if (key(event, 'R')) { subview_redirect('.txt'); }
+       if (key(event, 'W')) { softwrap_toggle(); }
+       if (key(event, 'X')) { subview_redirect('/delete/'); }
+        });
+</script>
+
+        <link rel="stylesheet" href="./dpaste_ 1TTMWXX_files/main(1).css" type="text/css" media="screen">
+        
+<style type="text/css">
+.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+.highlight span:hover { background: #ff9 }
+.softwrap { white-space: pre-wrap; }
+h1 i { color: #888;}
+</style>
+
+    <script type="text/javascript" src="./dpaste_ 1TTMWXX_files/html2canvas.js.download"></script><link rel="stylesheet" type="text/css" href="./dpaste_ 1TTMWXX_files/freshwidget.css"></head>
+    <body><div class="freshwidget-container responsive" id="FreshWidget" data-html2canvas-ignore="true" style="display: none;"><div class="widget-ovelay" id="freshwidget-overlay">&nbsp;</div><div class="freshwidget-dialog" id="freshwidget-dialog"><div id="freshwidget-close" class="widget-close"></div><div class="mobile-widget-close" id="mobile-widget-close"></div><div class="mobile-widget-arrow" id="mobile-widget-arrow"></div> <div class="frame-container">   </div><iframe title="Feedback Form" id="freshwidget-frame" src="./dpaste_ 1TTMWXX_files/loading.html" frameborder="0" scrolling="auto" allowtransparency="true" style="height: 500px"> </div></div></iframe></div></div><div id="freshwidget-button" data-html2canvas-ignore="true" class="freshwidget-button fd-btn-right" style="display: none; top: 235px;"><a href="javascript:void(0)" class="freshwidget-theme" style="color: white; background-color: rgb(0, 0, 255); border-color: white;">Support</a></div>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="topbar">
+<h1 style="float: left">
+    
+	
+</h1>
+<div id="headercontrols">
+    <a style="float: right; margin: 1em 1em 1em .3em;" class="button-link" href="http://dpaste.com/" title="Create a new paste">New</a>
+    <a style="float: right; margin: 1em .3em;" class="button-link" href="http://dpaste.com/about" title="Colophon, backstory, stats, tweets">About</a>
+    <a style="float: right; margin: 1em .3em;" class="button-link" href="http://dpaste.com/yours" title="Your last ten pastes, and your preferences">Yours</a>
+    <a style="float: right; margin: 1em .3em;" class="button-link" href="http://dpaste.com/api/v2/" title="Paste creation API">API</a>
+    <a style="float: right; margin: 1em .3em;" class="button-link" href="http://dpaste.com/help" title="Usage tips">Help</a>
+</div>
+
+</div>
+        <div id="content">
+<div class="controlbar">
+    <div class="syntax">382&nbsp;bytes, <strong>Python 3</strong></div>
+    <div class="controls"> &nbsp;&nbsp;&nbsp;
+    <a class="button-link" id="softwrap_toggle" title="Temporarily wrap long lines (shortcut: &#39;W&#39;)">Soft wrap</a>
+    <a class="button-link" href="http://dpaste.com/1TTMWXX.txt" title="Plaintext version (shortcut: &#39;R&#39;)">Raw text</a>
+    <a class="button-link" href="http://dpaste.com/1TTMWXX/duplicate/" title="Make a new paste based on this one (shortcut: &#39;D&#39;)">Duplicate</a>
+        
+    </div>
+</div>
+
+<table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv" style="display: block;"><pre class=""><a href="http://dpaste.com/1TTMWXX#line-1"> 1</a>
+<a href="http://dpaste.com/1TTMWXX#line-2"> 2</a>
+<a href="http://dpaste.com/1TTMWXX#line-3"> 3</a>
+<a href="http://dpaste.com/1TTMWXX#line-4"> 4</a>
+<a href="http://dpaste.com/1TTMWXX#line-5" class="special"> 5</a>
+<a href="http://dpaste.com/1TTMWXX#line-6"> 6</a>
+<a href="http://dpaste.com/1TTMWXX#line-7"> 7</a>
+<a href="http://dpaste.com/1TTMWXX#line-8"> 8</a>
+<a href="http://dpaste.com/1TTMWXX#line-9"> 9</a>
+<a href="http://dpaste.com/1TTMWXX#line-10" class="special">10</a>
+<a href="http://dpaste.com/1TTMWXX#line-11">11</a>
+<a href="http://dpaste.com/1TTMWXX#line-12">12</a>
+<a href="http://dpaste.com/1TTMWXX#line-13">13</a>
+<a href="http://dpaste.com/1TTMWXX#line-14">14</a>
+<a href="http://dpaste.com/1TTMWXX#line-15" class="special">15</a>
+<a href="http://dpaste.com/1TTMWXX#line-16">16</a>
+<a href="http://dpaste.com/1TTMWXX#line-17">17</a>
+<a href="http://dpaste.com/1TTMWXX#line-18">18</a></pre></div></td><td class="code"><div class="highlight" style="background: #fff; padding: 0;"><pre class=""><a name="line-1"></a><span class="k">def</span> <span class="nf">qPush</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">stack1</span><span class="p">,</span><span class="n">stack2</span><span class="p">):</span>
+<a name="line-2"></a>    
+<a name="line-3"></a>    <span class="n">stack1</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<a name="line-4"></a>
+<a name="line-5"></a><span class="k">def</span> <span class="nf">qPop</span><span class="p">(</span><span class="n">stack1</span><span class="p">,</span><span class="n">stack2</span><span class="p">):</span>
+<a name="line-6"></a>    
+<a name="line-7"></a>    <span class="k">if</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">stack2</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+<a name="line-8"></a>        <span class="k">while</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">stack1</span><span class="p">)</span><span class="o">!=</span><span class="mi">0</span><span class="p">):</span>
+<a name="line-9"></a>            <span class="n">stack2</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">stack1</span><span class="o">.</span><span class="n">pop</span><span class="p">())</span>
+<a name="line-10"></a>        <span class="k">if</span> <span class="n">stack2</span><span class="p">:</span>
+<a name="line-11"></a>            <span class="k">return</span> <span class="n">stack2</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<a name="line-12"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="line-13"></a>            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+<a name="line-14"></a>    <span class="k">else</span><span class="p">:</span>
+<a name="line-15"></a>        <span class="k">if</span> <span class="n">stack2</span><span class="p">:</span>
+<a name="line-16"></a>            <span class="k">return</span> <span class="n">stack2</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<a name="line-17"></a>        <span class="k">else</span><span class="p">:</span>
+<a name="line-18"></a>            <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</pre></div>
+</td></tr></tbody></table>
+<div class="controlbar">
+    Pasted  an hour ago —
+    Expires in <strong>7 days</strong>
+    <span class="printonly"><br>URL: http://dpaste.com/1TTMWXX</span>
+</div>
+</div>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="./dpaste_ 1TTMWXX_files/plugins.js.download"></script>
+        <script src="./dpaste_ 1TTMWXX_files/main.js.download"></script>
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-108096-4','auto');ga('send','pageview');
+        </script>
+	<script type="text/javascript" src="./dpaste_ 1TTMWXX_files/freshwidget.js.download"></script>
+	<script type="text/javascript">
+	  FreshWidget.init("", {"queryString": "&widgetType=popup&formTitle=Help+%26+Feedback&submitTitle=Submit&submitThanks=Thanks!&captcha=yes", "utf8": "✓", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#0000FF", "alignment": "2", "offset": "235px", "submitThanks": "Thanks!", "formHeight": "500px", "captcha": "yes", "url": "https://dpaste.freshdesk.com"} );
+	</script>
+
+    
+
+</body></html>

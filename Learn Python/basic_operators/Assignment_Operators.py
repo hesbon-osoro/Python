@@ -1,0 +1,32 @@
+#Assignment Operators
+
+a = 5
+b = 12
+c = 0
+print('a = ',a)
+print('b = ',b)
+print('c = ',c)
+#'='
+c = a + b
+print('c = a + b : ',c)
+# +=
+c += a
+print('c += a : ',c)
+# -=
+c -= a
+print('c -= a : ',c)
+# *=
+c *= a
+print('c *= a : ',c)
+# /=
+c /= a
+print('c /= a : ',c)
+# %=
+c %= a
+print('c %= a : ',c)
+# **=
+c **= a
+print('c **= a : ',c)
+# //=
+c //= a
+print('c //= a : ',c)

@@ -1,0 +1,180 @@
+#content {
+position:absolute;
+top:4em;
+}
+
+#content .text {
+padding: 15px;
+}
+
+#headercontrols h2 {
+float:right;
+font-size:125%;
+margin-right:30px;
+padding:5px
+}
+
+#headercontrols h2 a {
+color:#fff
+}
+
+#submit {
+font-size:150%
+}
+
+#topbar {
+background:#444;
+color:#ddd;
+height:4em;
+left:0;
+position:absolute;
+top:0;
+width:100%
+}
+
+.button-link {
+background:#888;
+border:1px solid #888;
+border-radius:4px;
+color:#ddd;
+font-family:Tahoma,Verdana,sans-serif;
+padding:.2em .5em;
+text-decoration:none
+}
+
+.button-link:hover {
+background:#555;
+border:1px solid #999;
+color:#fff
+}
+
+.code {
+background:#fff;
+padding:.5em;
+white-space:nowrap;
+}
+
+.controlbar {
+background:#666;
+clear:both;
+color:#ccc;
+font-size:75%;
+height:16px;
+margin:0;
+padding:1em
+}
+
+.controls {
+float:left
+}
+
+.controls a {
+color:#fff
+}
+
+.error {
+background:#fff;
+border:1px solid #d55;
+padding:20px
+}
+
+.highlighttable {
+background:#bbb;
+border:0;
+border-spacing:0;
+width:100%
+}
+
+.linenodiv {
+padding:.5em
+}
+
+.linenodiv .special {
+color:#777;
+font-weight:700
+}
+
+.linenodiv a {
+color:#999;
+text-decoration:none;
+border-bottom:none;
+}
+
+.paste_form_table th {
+font-weight:lighter;
+text-align:right
+}
+
+.printonly {
+display:none
+}
+
+.special .button-link {
+background:#aaa
+}
+
+.syntax {
+float:right;
+font-style:italic;
+padding-left:2em
+}
+
+a {
+border-bottom:1px dotted #666;
+color:#333;
+text-decoration:none
+}
+
+a:hover {
+color:#000
+}
+
+body {
+background:#ccc;
+font-family:Georgia,Garamond,serif;
+margin:0;
+padding:0
+}
+
+form td {
+padding:5px
+}
+
+h1 {
+background:none;
+color:#ccc;
+float:left;
+font-size:1.25em;
+font-weight:400;
+margin-left:10px;
+padding:5px
+}
+
+#topbar h1 {
+color:#fff;
+}
+
+label {
+color:#555;
+font-size:1em
+}
+
+p.action a {
+color:#333;
+text-decoration:none
+}
+
+p.action a:hover {
+text-decoration:underline
+}
+
+pre {
+font-family:"Bitstream Vera Sans Mono","Courier New",Monaco,monospace;
+font-size:90%
+}
+
+textarea {
+font-family:"Bitstream Vera Sans Mono","Courier New",Monaco,monospace;
+height:24em;
+width:52em;
+}
